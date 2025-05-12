@@ -2,7 +2,12 @@ name: Demo Workflow
 
 on:
   workflow_dispatch:
-
+    inputs:
+      greeting:
+        description: "Who to Greet"
+        required: true
+        default: octocat
+        
 jobs:
   demo:
     name: Demo Workflow
