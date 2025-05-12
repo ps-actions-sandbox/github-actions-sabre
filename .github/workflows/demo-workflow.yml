@@ -1,0 +1,11 @@
+name: Demo Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    name: Demo Workflow
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello Sabre Team 👋"
